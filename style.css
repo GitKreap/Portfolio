@@ -1,17 +1,17 @@
-.hlink{
+.hlink {
     text-decoration: none;
-    color:#ffffff;
+    color: #ffffff;
     background-color: rgb(0, 0, 0);
     padding: 30px;
-    border-radius: 20px;   
-     margin-right: 60px ;
+    border-radius: 20px;
+    margin-right: 30px;
 }
 
 
 
 
-.title{
-    background-color: rgb(186, 142, 193);
+.title {
+    background-color: #17c38f;
     max-width: 100%;
     display: flex;
     justify-content: left;
@@ -19,140 +19,186 @@
 
 }
 
-header{
-height: 150px;
-display: flex;
-justify-content: center;
-align-items:center;
-background-color: rgb(254, 142, 101);
+header {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #17c38f;
 }
 
-.titlediv{
+.titlediv {
 
-    background-color: rgb(196, 174, 9);
+    background-color: #17c38f;
     max-width: 60%;
-    padding: 40px;
+    padding: 30px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1em;
 }
 
 
 
-button{
+button {
 
     background-color: transparent;
-    box-shadow:  5px 5px 10px 1px rgba(34, 60, 80, 0.2);
-    
-}
-
-button:hover{
-        background-color: rgb(233, 233, 233);
-  
+    box-shadow: 5px 5px 10px 1px rgba(34, 60, 80, 0.2);
 
 }
 
-body{
-   background-color: rgb(217, 230, 246); 
+button:hover {
+    background-color: rgb(233, 233, 233);
+
+
 }
-.heading1{
+
+body {
+    background-color: #dbfaf2
+}
+
+.heading1 {
     color: blue;
-    
+
 }
 
-.cardscontainer{
+.cardscontainer {
     display: flex;
     justify-content: center;
-    width: 80%;
+    width: 100%;
     align-items: center;
     flex-wrap: wrap;
 }
 
-.cardscontainer h3{
+.cardscontainer h3 {
 
-font-size: 1,5em;
-
-}
-
-.form_section{
-display: flex;
-justify-content: center;
-margin: 20px 0;
+    font-size: 1, 5em;
 
 }
 
-
-
-.form_container{
-background-color: transparent;
-min-width: 40%;
-padding: 5px 50px;
-border-radius: 15px;
-
-}
-
-.form_container label p{
-
-margin: 0;
-margin-bottom: 5px;
-}
-
-.form_container button{
-padding: 10px;
-border-radius: 13px;
-display: flex;
-width: min-content;
-
+.form_section {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
 
 }
 
 
 
-.f_input{
-background-color: transparent;
-    margin-bottom: 15px;
+.form_container {
+    background-color: transparent;
+    min-width: 40%;
+    padding: 30px 30px;
+    border-radius: 15px;
+
+}
+
+.form_container label p {
+
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+.form_container button {
+    padding: 10px;
+    border-radius: 13px;
+    display: flex;
+    width: min-content;
+
+
+}
+
+
+
+.f_input {
+    background-color: transparent;
+    margin-bottom: 30px;
     height: 20px;
-    padding: 0 15px;
+    padding: 30 30px;
     border-radius: 20px;
-} 
+}
+
+.sliderdiv img {
+    width: 100%;
+    height: 150px;
+    object-fit: con;
+}
+
+.slider_button {
+    display: flex;
+
+    justify-content: center;
+
+}
 
 
-
-
-.cards{
+.cards {
     border: 2px solid black;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
-    align-items: right;
-    padding: 15px;
+    align-items: center;
+    padding: 30px;
     max-width: 450px;
     box-shadow: 0px 5px 10px 2px rgba(77, 130, 170, 0.2);
-    height: 350px;
-    min-width: 400px;
-    width: 25%S;
-}
- 
-.cards:last-child{
+    height: 300px;
 
-    background-color: rgb(240, 240, 169);
+    width: 25%;
+    margin: 5px;
+    font-size: 1em;
+    background-color: #e2f9f2;
+}
+
+.cards button{
+
+}
+
+#running_button {
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    cursor:pointer;
+    transition:all 0.3s;
+}
+
+#circle {
+width: 30px;
+height: 30px;
+border-radius: 50%;
+background-color: blue;
+position: absolute;
+transition: transform 0.1;
+}
+
+
+
+
+
+
+
+
+.cards:last-child {
+
+    background-color: #17c38f;
+    ;
     border: solid black 5px;
 
-}             
+}
 
 
-footer{
+footer {
 
-    background-color: rgb(223, 211, 196); 
-    display: flex; 
+    background-color: #17c38f;
+    display: flex;
     justify-content: center;
 }
- 
 
-form{
-min-width: 100%;
+
+form {
+    min-width: 100%;
     background-color: rgb(255, 255, 255);
-display: flex;
-flex-direction: column;
+    display: flex;
+    flex-direction: column;
 
 
 }

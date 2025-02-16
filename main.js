@@ -65,7 +65,7 @@ for(let i=0;i<=n;i++){
     */
 
 
- 
+
 /*Счет N от 1 до N*/
 /*
 let N=prompt();
@@ -154,11 +154,219 @@ books.push("Горе от ума");
 console.log(books[books.length-1]); 
 */
 
-
+/*
 
 let films = ["Гарри Поттер","Один дома","Форрест Гамп","Побег из Шоушенка","Крестный отец"]
 for (let i=0; i < films.length; i++) {
     
 console.log(films[i])
 }
+ */
+
+
+/* факториал
+let n = prompt("Введите число");
+let factorial=1;
+for (let i=1;i<=n; i++) {
+    factorial=factorial*i;
+}
+
+console.log(factorial)
+*/
+
+/*
+let a=[];
+let b=[];
+
+let c=[];
+
+let n=Math.floor(Math.random()*(10-5+1)+5);
+
+
+for (let i=0; i<5; i++){
+    a[i]=Math.floor(Math.random()*10);
+    b[i]=Math.floor(Math.random()*10);
+    c[i]=a[i]*b[i];
+}
+console.log(a)
+console.log(b)
+
+for (let i=0;i<c.length;i++) {
+    console.log(c[i])
+}
+*/
+
+
+//Math.floor(Math.random() * (max - min + 1)) + min - Формула 
+//console.log(Math.floor(Math.random()*10));
+
+
+/*
+let a = [];
+let b = [];
+let c = [];
+
+//let n = random дальше пишешь от 5 до 11
+let n = Math.floor(Math.random() * (11 - 5 + 1)) + 5
+
+for (let i = 0; i < n; i++) {
+    a[i] = Math.floor(Math.random() * (20 - 2 + 1)) + 2; //рандом поменять от 2 до 20 по формуле
+    b[i] = Math.floor(Math.random() * (20 - 2 + 1)) + 2;
+
+    if (a[i]  b[i]) {
+        c[i]
+    }
+
+    console.log(a[i]);
+
+}
+*/
+
+
+/*
+let a = [1, 50, 20, 58, 100, 38565, "Приветствую!"];
+let listelement = document.getElementById("Numberlist");
+
+
+for (let i = 0; i < a.length; i++) {
+    let listitem = document.createElement("li");
+    listitem.textContent = a[i];
+    listelement.appendChild(listitem);
+
+
+}
+
+
+let title = document.querySelectorAll("p");
+
+console.log(title[title.length - 1]);
+
+
+let color_array = ["yelloy", "green", "pink", "red"]
+
+
+
+function color() {
+    document.body.style.backgroundColor = "blue";
+    document.body.style.backgroundColor ="green";
+}
+*/
+
+
+/*
+let colormassive = document.body;
+let a = ["red", "green", "yellow"];
+let k=0;
+
+function color() {
+
+    colormassive.style.backgroundColor = a[k];
+
+
+if (k<a.length ) {
+k++;
+}
+
+else{
+
+    k=0;
+    colormassive.style.backgroundColor = a[k];
+    k++;
+}
+
+
+}
+*/
+
+
+let a = ["Привет!", "Как дела?", "До встречи!"];
+let N = 0;
+let title = document.querySelector("h1");
+
+if (N > a.length - 1) {
+    N = 0;
+}
+
+function change_title() {
+    title.textContent = a[N];
+    N++;
+    if (N > a.length - 1) {
+        N = 0;
+    }
+}
+
+
+
+
+
+let j = ["10", "9", "8", "7", "6", "5", "4", "3", "2", "1"];
+i = 0;
+let b = document.getElementById("123");
+let but = document.getElementById("buttn_count");
+
+function count() {
+    b.textContent = j[i];
+    i++;
+    if (i > j.length - 1) {
+        b.textContent = "Отсчет окончен!";
+        but.style.opacity = 0;
+    }
+}
+
+
+
+
+
+let img = ["Img/Task.png", "Img/slider.1.png", "Img/slider.2.png"];
+let slider = document.getElementById("sliderimg");
+let index = 0;
+
+function next_img() {
+    index++;
+    if (index>img.length-1){
+        index=0;
+    }
+    slider.src = img[index];
+}
+
+function prev_img(){
+
+    index--;
+    if (index < 0){
+        index=img.length-1;
+    }
+    slider.src = img[index];
+}
+ function auto_slide(){
+next_img();
+
+ }
+ //setInterval(auto_slide, 3000);
+
+
+
+ let runbtn=document.getElementById("running_button");
+ 
+ runbtn.addEventListener("mouseover", function(){
+let x =Math.random()*(window.innerWidth-100);
+let y =Math.random()*(window.innerHeight-50);
+    runbtn.style.left=`${x}px`;
+    runbtn.style.top=`${y}px`;
+
+ })
+
+
+let crcl = document.getElementById(circle);
+crcl.addEventListener("mousemove", function(event){
+crcl.style.transform = `tranlate(${event.clientX}px,${event.clientY}px)`
+});
+
+
+
+
+
+
+
+
+
 

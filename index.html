@@ -15,6 +15,7 @@
             <a class="hlink" href="https://yandex.ru">Главная </a>
             <a class="hlink" href="https://yandex.ru">Контакты </a>
             <a class="hlink" href="https://yandex.ru">Инфо</a>
+
         </nav>
         <a class="hlink" href="Animation.html" target="_blank"> Анимация</a>
     </header>
@@ -23,18 +24,27 @@
         <section class="title">
             <div class="titlediv">
                 <h1>Артем Харахорин</h1>
-
+                <div button onclick="change_title()">Cменить фразу</button></div>
                 <div>
-                    Привет! Я - начинающий специалист в сфере IT. Впервые увлекся я этим в 2017 году. Я настроен выучить
-                    и понять как можно больше, а так же в будущем надеюсь зарабатывать на сфере IT.
+                    <div button onclick="count()" id="buttn_count">Cчетчик</button>></div>
 
+                    <div>
+                        <p id="123">Привет! Я - начинающий специалист в сфере IT. Впервые увлекся я этим в 2017 году. Я
+                            настроен выучить
+                            и понять как можно больше, а так же в будущем надеюсь зарабатывать на сфере IT.</p>
+
+                    </div>
+
+<div id="circle"></div>
+
+
+
+
+                    <img src="Img/itman.jpg" alt="" width="500px">
+                    <img src="Img/KOD.jpg" alt="" width="500px">
+                    <button id="running_button" onclick="color()">Сменить цвет</button>
+                    <ul id="colormassive"></ul>
                 </div>
-
-
-                <img src="Img/itman.jpg" alt="" width="400px">
-                <img src="Img/KOD.jpg" alt="" width="500px">
-                <button>Узнать больше</button>
-            </div>
         </section>
 
         <section class="form_section">
@@ -61,16 +71,27 @@
                         </div>
                     </fieldset>
                     <button type="submit" class="submit_button">Отправить</button>
-                    </form>
+                </form>
             </div>
         </section>
- 
 
-        
+
+        <ul id="Numberlist"></ul>
+
         <section>
             <div class="cardscontainer">
                 <div class="cards">
-                    <img src="img/Task.png" width="200px">
+                    <div class="sliderdiv">
+
+                        <img id="sliderimg" src="img/Task.png" width="200px">
+                    </div>
+                    <div class="slider_button">
+                        <button onclick="prev_img()">&#11013;</button>
+                        <button onclick="next_img()">&#10145;</button>
+                    </div>
+
+
+
                     <h3>Мой проект</h3>
                     <p>Проект по созданию игры на Python</p>
                     <button>
@@ -134,7 +155,7 @@
                     </button>
                 </div>
 
-                
+
             </div>
 
 
@@ -150,8 +171,7 @@
         </div>
     </footer>
 </body>
+
 </html>
 
 <script src="main.js"></script>
-
-
